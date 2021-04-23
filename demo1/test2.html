@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="test2">
+        <!-- 一般来说，v-if 有更高的切换开销，而 v-show 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 v-show 较好；如果在运行时条件很少改变，则使用 v-if 较好。 -->
+        <h1 v-if="awesome">Vue is awesome!</h1>
+        <h1 v-else>Oh no 😢</h1>
+        <h1 v-show="show">Hello!</h1>
+        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+        <label for="jack">Jack</label>
+        <input type="checkbox" id="john" value="John" v-model="checkedNames">
+        <label for="john">John</label>
+        <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+        <label for="mike">Mike</label>
+        <br>
+        <span>Checked names: {{ checkedNames }}</span>
+        <br>
+        <select v-model="selected">
+            <option disabled value="">请选择</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+        <ul>
+            <li v-for="(item, index) in items" :key="index">
+                {{ parentMessage }} - {{ index }} - {{ item.message }}
+            </li>
+            <li v-for="(value, name, index) in object">
+                {{ index }}. {{ name }}: {{ value }}
+            </li>
+        </ul>
+    </div>
+    <script>
+        var test2 = new Vue({
+            el: '#test2',
+            data: {
+                awesome: true,
+                show: false,
+                parentMessage: 'Parent',
+                checkedNames: [],
+                selected: '',
+                items: [
+                    { message: 'Foo' },
+                    { message: 'Bar' }
+                ],
+                object: {
+                    title: 'How to do lists in Vue',
+                    author: 'Jane Doe',
+                    publishedAt: '2016-04-10'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
