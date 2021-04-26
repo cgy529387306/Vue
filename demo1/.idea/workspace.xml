@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec1e33a-3698-442e-b624-bcda75e6bb0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,11 @@
       <option name="presentableId" value="Default" />
       <updated>1619073475522</updated>
       <workItem from="1619073477186" duration="6453000" />
-      <workItem from="1619145120403" duration="10631000" />
+      <workItem from="1619145120403" duration="11287000" />
+      <workItem from="1619317233130" duration="186000" />
+      <workItem from="1619344527744" duration="843000" />
+      <workItem from="1619402220282" duration="20000" />
+      <workItem from="1619429521082" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="2222">
       <created>1619082429438</created>
@@ -85,17 +86,17 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="709" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1619158648861" />
-    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1619082428018">
+    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1619431936870">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1619082428018" />
+    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1619431936870" />
     <state x="461" y="222" key="SettingsEditor" timestamp="1619074321283">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="222" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1619074321283" />
-    <state x="552" y="110" key="Vcs.Push.Dialog.v2" timestamp="1619082437578">
+    <state x="552" y="110" key="Vcs.Push.Dialog.v2" timestamp="1619173520056">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="110" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1619082437578" />
+    <state x="552" y="110" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1619173520056" />
   </component>
 </project>
