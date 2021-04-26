@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alignCenter {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .alignJustify {
+            width: 400px;
+            text-align: justify;
+            margin-top: 10px;
+        }
+        .decorationOverline {
+            text-decoration:overline;
+            margin-top: 10px;
+        }
+        .decorationLineThrough {
+            text-decoration:line-through;
+            margin-top: 10px;
+        }
+        .decorationUnderline {
+            text-decoration:underline;
+            margin-top: 10px;
+        }
+        .wordSpacing {
+            word-spacing: 50px;
+            margin-top: 10px;
+        }
+        .letterSpacing {
+            letter-spacing: 50px;
+            margin-top: 10px;
+        }
+        .lineHeight {
+            line-height: 50px;
+            border: 1px solid #00ff00;
+            margin-top: 10px;
+        }
+        .lineHeight1 {
+            line-height: 200%;
+            border: 1px solid #00ff00;
+            margin-top: 10px;
+        }
+        .lineHeight2 {
+            line-height: 2;
+            border: 1px solid #00ff00;
+            margin-top: 10px;
+        }
+        .lineHeight3 {
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #00ff00;
+            margin-top: 10px;
+        }
+        .overScroll {
+            overflow: scroll;
+            width: 250px;
+            height: 150px;
+            border: 1px solid #cccccc;
+        }
+        .overAuto {
+            overflow: auto;
+            width: 250px;
+            height: 150px;
+            border: 1px solid #cccccc;
+        }
+        .overHidden {
+            overflow: hidden;
+            width: 250px;
+            height: 150px;
+            border: 1px solid #cccccc;
+        }
+        .overDefault {
+            width: 250px;
+            height: 150px;
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="alignCenter">Text-align center Effect</div>
+    <div class="alignJustify">CSS is a Style Sheet Language for formatting the document content
+    (written in HTML or other markup language). You might be interested
+    by the CSS Working Group wiki too.</div>
+    <div class="decorationOverline">Text-decoration overline Effect</div>
+    <div class="decorationLineThrough">Text-decoration line-through Effect</div>
+    <div class="decorationUnderline">Text-decoration underline Effect</div>
+    <div class="wordSpacing">word-spacing用于设置单词之间间距的属性</div>
+    <div class="wordSpacing">word-spacing用于 设置 单词 之间 间距的属性</div>
+    <div class="letterSpacing">letter-spacing属性用于设置文本字符之间的额外间距。</div>
+    <div class="lineHeight">line-height属性定义一行文本的高度<br>本段的行高使用像素指定。</div>
+    <div class="lineHeight1">line-height属性定义一行文本的高度<br>本段的行高使用百分比指定。</div>
+    <div class="lineHeight2">line-height属性定义一行文本的高度<br>本段的行高使用数字指定。</div>
+    <div class="lineHeight3">单行文本通过line-height设置垂直居中, 通过text-align center设置水平居中</div>
+    <div style="width:150px;height:100px;line-height:100px;font-size:0; background: lime">
+                <span style="display:inline-block;font-size:10px;line-height:1.4em;vertical-align:middle;">多行文本设置垂直居中.<br/>
+                       多行文本设置垂直居中
+                </span>
+    </div>
+    <div class="overScroll">
+        overflow: scroll
+        可以使用滚动条查看溢出的内容.
+        您可以使用滚动条查看溢出的内容。
+
+        您可以使用滚动条查看溢出的内容。
+
+        您可以使用滚动条查看溢出的内容。
+
+        您可以使用滚动条查看溢出的内容。
+
+        您可以使用滚动条查看溢出的内容。
+    </div>
+    <div class="overScroll">
+        overflow: scroll将隐藏所有溢出的内容并使滚动条出现在相关元素上。如果内容没有溢出，滚动条仍然可见，但被禁用。
+    </div>
+    <div class="overAuto">
+        overflow: auto滚动条仅在内容溢出时出现。
+    </div>
+    <div class="overAuto">
+        overflow: auto滚动条仅在内容溢出时出现。
+        overflow: auto滚动条仅在内容溢出时出现。
+        overflow: auto滚动条仅在内容溢出时出现。
+        overflow: auto滚动条仅在内容溢出时出现。
+        overflow: auto滚动条仅在内容溢出时出现。
+        overflow: auto滚动条仅在内容溢出时出现。
+    </div>
+    <div class="overHidden">
+        overflow: hidden
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+    </div>
+    <div class="overDefault">
+        overflow: 默认不设置 hidden
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+
+        溢出的内容被隐藏。
+    </div>
+</body>
+</html>

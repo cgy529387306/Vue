@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式选择</title>
+    <style>
+        /*元素类型选择器将文档树中元素的每个示例与相应的元素类型名称进行匹配。*/
+        p {
+            color: blue;
+        }
+        /*id选择器用于为单个或唯一元素定义样式规则 ID选择器的定义是一个井号（#），后跟ID值。*/
+        #idStyle {
+            color: #ff0000;
+        }
+        /*类选择器可用于选择具有class属性的任何HTML元素。具有该类的所有元素将根据定义的规则进行格式化, 用一个句号（.）紧随其后的类值定义类选择器。*/
+        .classStyle {
+            color: #0000ff;
+        }
+        /*当需要选择一个元素是另一个元素的后代时，可以使用这些选择器,如h2元素后代的em元素的文本变为红色，其他em文本(如段落或引用中的em)则不会被这个规则选择中*/
+        h2 em {
+            color:red;
+        }
+        ul.menu {
+            padding: 0;
+            list-style: none;
+        }
+        ul.menu li{
+            display: inline;
+        }
+        ul.menu li a {
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        /*子选择器只能用于选择作为某些元素的直接子元素的那些元素。子选择器由两个或多个选择器组成，两个选择器之间用大于号（即>）隔开。例如，您可以使用这些选择器在具有多个级别的嵌套列表中选择列表元素的第一级。*/
+        ul > li {
+            list-style: square;
+        }
+        ul > li ol {
+            list-style: none;
+        }
+        /*相邻兄弟选择器：相邻的同级选择器可用于选择同级元素，只有两个元素相连才有效，如第一个h4和h3相连所以样式有效，第二个h4和h3不相连，所以样式无效*/
+        h3 + h4 {
+            color: blue;
+            font-size: 18px;
+        }
+        /*通用兄弟选择器：同级选择器可用于选择同级元素，只要和h4同级的h5元素样式都生效*/
+        h4 ~ h5 {
+            color: blue;
+            font-size: 18px;
+        }
+        /*分组选择器：样式表中的多个选择器通常共享相同的样式规则声明。您可以将它们分组为一个逗号分隔的列表，以最大程度地减少样式表中的代码。它还可以防止您一遍又一遍地重复相同的样式规则。*/
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="classStyle">This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div id="idStyle">This is a warning!</div>
+    <h2>This is a <em>important</em> heading</h2>
+    <ul class="menu">
+        <li>Home</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Services</a>
+            <ol>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h3>这个是我 </h3>
+    <h4>这个是兄弟 </h4>
+    <h4>这个不是兄弟 </h4>
+    <h4>这个是我 </h4>
+    <h5>这个是兄弟 </h5>
+    <h5>这个也是兄弟 </h5>
+</body>
+</html>
